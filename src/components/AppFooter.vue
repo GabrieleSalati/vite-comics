@@ -48,6 +48,17 @@ export default {
             </div>
             <div><img class="bigLogo" src="/vue-dc-comics-1/img/dc-logo-bg.png" alt="bigLogo"></div>
         </div>
+        <div class="contacts">
+            <div class="button"><button>SIGN UP NOW!</button></div>
+            <div class="social">
+                <h3>FOLLOW US!</h3>
+                <img src="/vue-dc-comics-1/img/footer-facebook.png" alt="">
+                <img src="/vue-dc-comics-1/img/footer-periscope.png" alt="">
+                <img src="/vue-dc-comics-1/img/footer-pinterest.png" alt="">
+                <img src="/vue-dc-comics-1/img/footer-twitter.png" alt="">
+                <img src="/vue-dc-comics-1/img/footer-youtube.png" alt="">
+            </div>
+        </div>
     </footer>
 </template>
 <style lang="scss" scoped>
@@ -67,7 +78,17 @@ footer {
     @include flex-around();
 }
 
+ul {
+    margin: 0 2rem;
+}
+
 .bigLogo {
     width: 25rem;
+}
+
+.contacts {
+    background-color: darkgray;
+    height: 100px;
+    @include flex-around();
 }
 </style>
