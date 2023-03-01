@@ -17,4 +17,6 @@ export default {
   <MainContent />
   <AppFooter />
 </template>
-<style></style>
+<style lang="scss">
+@use './assets/scss/general.scss'
+</style>

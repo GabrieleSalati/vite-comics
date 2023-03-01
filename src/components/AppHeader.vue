@@ -2,12 +2,35 @@
 export default {
   data() {
     return {
-      title: 'AppHeader',
+      links: []
     };
   },
 };
 </script>
 <template>
-  {{ title }}
+  <header>
+    <img src="/vue-dc-comics-1/img/dc-logo.png" alt="logo">
+    <ul>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+    </ul>
+  </header>
 </template>
-<style></style>
+<style lang="scss" scoped>
+@use '../assets/scss/dedicated/mixins.scss' as *;
+
+header {
+  @include flex-around();
+}
+
+li {
+  display: inline-block;
+}
+</style>
