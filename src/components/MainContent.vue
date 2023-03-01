@@ -2,12 +2,16 @@
 export default {
     data() {
         return {
-            title: 'MainContent',
         };
     },
 };
 </script>
 <template>
-    {{ title }}
+    <main></main>
 </template>
-<style></style>
+<style lang="scss">
+main {
+    background-color: black;
+    height: 300px;
+}
+</style>
