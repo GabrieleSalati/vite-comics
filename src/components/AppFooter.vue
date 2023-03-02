@@ -23,7 +23,7 @@ export default {
         <div class="bot-links">
             <div class="links">
                 <ul>
-                    <h4>title</h4>
+                    <h3>title</h3>
                     <li>link</li>
                     <li>link</li>
                     <li>link</li>
@@ -31,26 +31,26 @@ export default {
                     <li>link</li>
                     <li>link</li>
                     <li>link</li>
-                    <h4>title</h4>
-                    <li>link</li>
-                    <li>link</li>
-                </ul>
-                <ul>
-                    <h4>title</h4>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
-                    <li>link</li>
+                    <h3>title</h3>
                     <li>link</li>
                     <li>link</li>
                 </ul>
                 <ul>
-                    <h4>title</h4>
+                    <h3>title</h3>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                    <li>link</li>
+                </ul>
+                <ul>
+                    <h3>title</h3>
                     <li>link</li>
                     <li>link</li>
                     <li>link</li>
@@ -102,6 +102,7 @@ footer {
 
 ul {
     margin: 0 2rem;
+    color: gray;
 }
 
 .bigLogo {

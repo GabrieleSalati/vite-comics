@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      links: []
+      links: ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop']
     };
   },
 };
@@ -11,15 +11,7 @@ export default {
   <header>
     <img src="/vue-dc-comics-1/img/dc-logo.png" alt="logo">
     <ul>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
-      <li><a href="#">link</a></li>
+      <li v-for="link of links"><a href="#">{{ link }}</a></li>
     </ul>
   </header>
 </template>
@@ -33,6 +25,10 @@ header {
 
 li {
   display: inline-block;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
+
+  a {
+    text-decoration: none;
+  }
 }
 </style>
