@@ -28,9 +28,11 @@ export default {
 
 header {
   @include flex-around();
+  padding: 2rem 0;
 }
 
 li {
   display: inline-block;
+  margin: 0 1.5rem;
 }
 </style>

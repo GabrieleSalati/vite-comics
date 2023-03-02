@@ -8,6 +8,18 @@ export default {
 </script>
 <template>
     <footer>
+        <div class="services">
+            <img class="service" src="/vue-dc-comics-1/img/buy-comics-digital-comics.png" alt="">
+            <h3>DIGITAL COMICS</h3>
+            <img class="service" src="/vue-dc-comics-1/img/buy-comics-merchandise.png" alt="">
+            <h3>DC MERCHANDISE</h3>
+            <img class="service" src="/vue-dc-comics-1/img/buy-comics-subscriptions.png" alt="">
+            <h3>SUBSCRIPTION</h3>
+            <img class="service" src="/vue-dc-comics-1/img/buy-comics-shop-locator.png" alt="">
+            <h3>COMIC SHOP LOCATOR</h3>
+            <img class="service" src="/vue-dc-comics-1/img/buy-dc-power-visa.svg" alt="">
+            <h3>DC POWER VISA</h3>
+        </div>
         <div class="bot-links">
             <div class="links">
                 <ul>
@@ -65,7 +77,17 @@ export default {
 @use '../assets/scss/dedicated/mixins.scss' as *;
 
 footer {
-    height: 500px;
+    height: 700px;
+}
+
+.services {
+    @include flex-around();
+    background-color: blue;
+    height: 200px;
+}
+
+.service {
+    width: 3rem;
 }
 
 .bot-links {
